@@ -1,0 +1,35 @@
+<!doctypehtml>
+<html>
+<head>
+<script type="text/javascript">
+function translate(str1)
+{
+
+str2="";
+
+for(i=0;i<str1.length;i++)
+{
+if(str1.charAt(i)=='a' || str1.charAt(i)=='e' || str1.charAt(i)=='i' || str1.charAt(i)=='o' || str1.charAt(i)=='u')
+{
+str2=str2+str1.charAt(i);
+}
+else
+{
+str2=str2+str1.charAt(i)+"o"+str1.charAt(i);
+}
+}
+alert("translated="+str2);
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+
+str1=prompt("Enter string");
+
+
+translate(str1);
+
+</script>
+</body>
+<html>
